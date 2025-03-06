@@ -1,0 +1,31 @@
+func main() {
+  a = 5;
+  b = 10;
+  if (a < b) {
+    print("a is less than b");
+  }
+  if (a > b) {
+    print("a is greater than b");
+  }
+  if (a <= a) {
+    print("a is less than or equal to a");
+  }
+  if (a >= a) {
+    print("a is greater than or equal to a");
+  }
+  if (a == a) {
+    print("a is equal to a");
+  }
+  if (a != a) {
+    print("a is not equal to a");
+  }
+}
+
+/*
+*OUT*
+a is less than b
+a is less than or equal to a
+a is greater than or equal to a
+a is equal to a
+*OUT*
+*/

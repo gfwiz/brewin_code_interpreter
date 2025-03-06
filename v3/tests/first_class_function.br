@@ -1,0 +1,12 @@
+func foo(a) { print(a); }
+
+func main() {
+  a = foo; /* store function foo in variable a */
+  a(10);  /* call function foo through variable a prints 10 */
+}
+
+/*
+*OUT*
+10
+*OUT*
+*/

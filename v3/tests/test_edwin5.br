@@ -1,0 +1,22 @@
+func foo(f1, ref f2) {
+  f1();  /* prints 1 */
+  f2();  /* prints 1 */
+}
+
+func main() {
+  x = 0;
+  lam1 = lambda() { x = x + 1; print(x); };
+  lam2 = lambda() { x = x + 1; print(x); };
+  foo(lam1, lam2);
+  lam1();  /* prints 1 */
+  lam2();  /* prints 2 */
+}
+
+/*
+*OUT*
+1
+1
+1
+2
+*OUT*
+*/

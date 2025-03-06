@@ -1,0 +1,112 @@
+func main() {
+    a = lambda() {print("original");};
+
+    x = lambda(ref f) {
+        a();
+        f();
+        f = lambda() {print("modified");};
+        a();
+        f();
+    };
+
+    x(a);
+    a();
+
+    y = lambda(ref c) {
+        c = c + 1;
+    };
+    n = 1;
+    y(n);
+    print(n);
+    print("---");
+
+    z = lambda(ref i) {
+        q = lambda(ref j) {
+            l = 12;
+
+            p = lambda(ref k) {
+                /* j is deep copied into p's context? Assigning j won't work here? */
+                k = 321;
+                print(i);
+                print(j);
+                print(k);
+                j = 21;
+                print(i);
+                print(j);
+                print(k);
+                i = 1;
+                print(i);
+                print(j);
+                print(k);
+                print("-");
+                l = 3;
+                print("l is: ", l);
+            };
+
+            print("l is: ", l);
+            print("-----");
+            p(j);
+            print("-----");
+            print("l is: ", l);
+            i = 10;
+        };
+
+        a = 0;
+        q(a);
+        print("a is: ", a);
+        print("i is: ", i);
+        q(i);
+        print("i is: ", i);
+    };
+
+    z(n);
+    print("---");
+    print("n is: ", n);
+}
+
+/*
+*OUT*
+original
+original
+original
+modified
+modified
+2
+---
+l is: 12
+-----
+2
+0
+321
+2
+21
+321
+1
+21
+321
+-
+l is: 3
+-----
+l is: 12
+a is: 321
+i is: 2
+l is: 12
+-----
+10
+2
+321
+10
+21
+321
+1
+21
+321
+-
+l is: 3
+-----
+l is: 12
+i is: 321
+---
+n is: 321
+*OUT*
+*/

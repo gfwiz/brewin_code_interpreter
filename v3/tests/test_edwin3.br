@@ -1,0 +1,12 @@
+func main() {
+  foo = lambda(ref a) {a = lambda() {print("USELESS");};};
+  bar = 1;
+  foo(bar);
+  bar();
+}
+
+/*
+*OUT*
+USELESS
+*OUT*
+*/

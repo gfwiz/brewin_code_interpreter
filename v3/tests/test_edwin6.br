@@ -1,0 +1,22 @@
+func main() {
+  x = 1;
+  y = x;
+  y = 2;
+  print(x);
+  print(y);
+
+  a = 1;
+  b = a;
+  a = 2;
+  print(a);
+  print(b);
+}
+
+/*
+*OUT*
+1
+2
+2
+1
+*OUT*
+*/

@@ -1,0 +1,13 @@
+func main() {
+  a = inputs();
+  print(a + "b");  
+}
+
+/*
+*IN*
+aaaa
+*IN*
+*OUT*
+aaaab
+*OUT*
+*/

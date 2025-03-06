@@ -1,0 +1,17 @@
+func main() {
+  print(foo());
+}
+
+func foo() {
+    i = 0;
+    while (i < 3) {
+        return 1;
+        i = i + 1;
+    }
+}
+
+/*
+*OUT*
+1
+*OUT*
+*/

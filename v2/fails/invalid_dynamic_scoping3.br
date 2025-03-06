@@ -1,0 +1,15 @@
+func main() {
+    a = 0;
+    while (a < 5) {
+        a = a + 1;
+        b = a * a;
+    }
+    print(b);
+}
+
+/*
+*OUT*
+ErrorType.NAME_ERROR
+*OUT*
+*/
+ 

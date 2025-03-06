@@ -1,0 +1,9 @@
+func main() {
+  d = 5 && 10;
+}
+
+/*
+*OUT*
+ErrorType.TYPE_ERROR
+*OUT*
+*/

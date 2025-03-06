@@ -1,0 +1,21 @@
+func print_if_greater(a, b) {
+  if (a > b) {
+    print(a);
+  } else {
+    print(b);
+  }
+}
+
+func main() {
+  print_if_greater(5, 10);
+  print_if_greater(10, 5);
+  print_if_greater(5, 5);
+}
+
+/*
+*OUT*
+10
+10
+5
+*OUT*
+*/

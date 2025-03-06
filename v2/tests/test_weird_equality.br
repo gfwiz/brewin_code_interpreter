@@ -1,0 +1,25 @@
+func main() {
+  print(true == true);
+  print(true == "true");
+  print(true == "aaa");
+  print(1 == false);
+  print(1 == nil);
+  print(nil == nil);
+  print("aaa" == "aaa");
+  print(nil == "aaa");
+  print(nil != nil);
+}
+
+/*
+*OUT*
+true
+false
+false
+false
+false
+true
+true
+false
+false
+*OUT*
+*/

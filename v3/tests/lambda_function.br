@@ -1,0 +1,13 @@
+func main() {
+  b = 5;
+  f = lambda(a) { print(a*b); };  /* captures b = 5 */
+  b = 10; /* does not affect value of b captured by the lambda */
+
+  f(20);  /* prints 100 (5 * 20) */
+}
+
+/*
+*OUT*
+100
+*OUT*
+*/

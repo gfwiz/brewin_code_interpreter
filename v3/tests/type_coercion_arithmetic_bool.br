@@ -1,0 +1,18 @@
+func main() {
+  x = true + 6; /* x is 7 */
+  y = false * 10; /* y is zero */
+  z = true + true; /* z is 2 */
+
+  print(x);
+  print(y);
+  print(z);
+}
+
+
+/*
+*OUT*
+7
+0
+2
+*OUT*
+*/

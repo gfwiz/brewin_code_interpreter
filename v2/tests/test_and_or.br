@@ -1,0 +1,75 @@
+func main() {
+  print(true || false && false);
+  print(true && true || true && false);
+  print(true && true && true && false || false && true && true && true);
+  
+  print(5 == 5 && "hello" != "world");  
+  print(10 > 5 || false);  
+  print("hello" == "hello" && 10 != 20);  
+  print(10 < 5 || "world" != "world");  
+  print(5 >= 5 && "hello" == "hello");  
+  print(10 <= 5 || "world" == "hello");  
+  print(5 != 5 && "hello" == "world");  
+  print(10 == 10 || "world" != "hello");  
+  print("hello" != "world" && 10 == 20);  
+  print(10 == 5 || "world" == "world");
+  
+  print((5 > 3 && "hello" == "world") || true);  
+  print((10 <= 5 || "world" == "hello") && false);  
+  print((5 != 5 && "hello" == "world") || (10 == 10 && "world" != "hello"));  
+  print(("hello" != "world" && 10 == 20) || (10 == 5 && "world" == "world"));  
+  print((5 == 5 && "hello" != "world") && (10 > 5 || false));  
+  print((10 < 5 || "world" != "world") && (5 >= 5 && "hello" == "hello"));  
+  print((10 <= 5 || "world" == "hello") || (5 != 5 && "hello" == "world"));  
+  print((10 == 10 || "world" != "hello") && ("hello" != "world" && 10 == 20));  
+  print((10 == 5 || "world" == "world") || (5 > 3 && "hello" == "world"));  
+  print((10 <= 5 || "world" == "hello") && (5 != 5 && "hello" == "world"));  
+  print((10 == 10 || "world" != "hello") || ("hello" != "world" && 10 == 20));  
+  print((10 == 5 || "world" == "world") && (5 > 3 && "hello" == "world"));  
+  print((5 == 5 && "hello" != "world") || (10 > 5 || false));  
+  print((10 < 5 || "world" != "world") || (5 >= 5 && "hello" == "hello"));  
+  print((10 <= 5 || "world" == "hello") && (5 != 5 && "hello" == "world"));  
+  print((10 == 10 || "world" != "hello") || ("hello" != "world" && 10 == 20));  
+  print((10 == 5 || "world" == "world") && (5 > 3 && "hello" == "world"));  
+  print((5 == 5 && "hello" != "world") && (10 > 5 || false));  
+  print((10 < 5 || "world" != "world") || (5 >= 5 && "hello" == "hello"));  
+  print((10 <= 5 || "world" == "hello") && (5 != 5 && "hello" == "world"));  
+}
+
+/*
+*OUT*
+true
+true
+false
+true
+true
+true
+false
+true
+false
+false
+true
+false
+true
+true
+false
+true
+false
+true
+false
+false
+false
+true
+false
+true
+false
+true
+true
+false
+true
+false
+true
+true
+false
+*OUT*
+*/

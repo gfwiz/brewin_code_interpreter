@@ -1,0 +1,19 @@
+func main() {
+  x = 0;
+  a = lambda() { x = x + 1; print(x); };
+  b = a;
+  a(); /* prints 1 */
+  b(); /* prints 2 */
+
+  a(); /* prints 3 */
+  b(); /* prints 4 */
+}
+
+/*
+*OUT*
+1
+2
+3
+4
+*OUT*
+*/

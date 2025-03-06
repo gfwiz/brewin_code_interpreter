@@ -1,0 +1,20 @@
+func main() {
+  print(foo(true) != nil);
+  print(foo(false) == nil);
+}
+
+func foo(x) {
+  print("hi");
+  if (x) {
+    return true;
+  }
+}
+
+/*
+*OUT*
+hi
+true
+hi
+true
+*OUT*
+*/

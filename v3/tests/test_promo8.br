@@ -1,0 +1,67 @@
+/*
+
+Tests coercion of bools into ints, etc.
+
+*/
+
+
+func main() {
+  print(1+true);
+  print(0&&17);
+  print(4||0);
+  print(20*true);
+  print(10/true);
+  print(false/true);
+  print(false == 0);
+  print(true == -17);
+  print(!5);
+  print(10 - true);
+  print(10 >= true * 10);
+  
+  print(true == 1);
+  print(true != 1);
+  print(true == 0);
+  print(true != 0);
+  print(false == 1);
+  print(false != 1);
+  print(false == 0);
+  print(false != 0);
+
+  print(1 == (1 + true));
+  print(1 == 2);
+  
+  if (17) { print("stuff"); }
+  x = 3;
+  while (x) { print("stuff2"); x = x - 1; }
+
+}
+
+/*
+*OUT*
+2
+false
+true
+20
+10
+0
+true
+true
+false
+9
+true
+true
+false
+false
+true
+false
+true
+true
+false
+false
+false
+stuff
+stuff2
+stuff2
+stuff2
+*OUT*
+*/

@@ -1,0 +1,13 @@
+func main() {
+  b = 10;
+  c = 13;
+  foo = lambda(ref a) {a(c);};
+  b = 2;
+  foo(lambda(x) {print(x + b);});
+}
+
+/*
+*OUT*
+15
+*OUT*
+*/

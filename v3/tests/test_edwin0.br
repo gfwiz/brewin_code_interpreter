@@ -1,0 +1,17 @@
+func main() {
+    f = lambda() {print("f");};
+    g = lambda() {print("g");};
+	x = lambda(ref f, ref g) {f = g;};
+	x(f, g);
+	f();
+	g();
+	print(f == g);
+}
+
+/*
+*OUT*
+g
+g
+true
+*OUT*
+*/

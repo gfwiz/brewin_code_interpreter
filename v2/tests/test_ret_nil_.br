@@ -1,0 +1,19 @@
+func explicit_nil_return() {
+  return;
+}
+
+func implicit_nil_return() {
+  a = 1;
+}
+
+func main() {
+  print(nil == explicit_nil_return());
+  print(nil == implicit_nil_return());
+}
+
+/*
+*OUT*
+true
+true
+*OUT*
+*/

@@ -1,0 +1,22 @@
+func countdown(n) {
+  if (n > 0) {
+    print(n);
+    return countdown(n - 1);
+  } else {
+    return n;
+  }
+}
+
+func main() {
+  countdown(5);
+}
+
+/*
+*OUT*
+5
+4
+3
+2
+1
+*OUT*
+*/

@@ -1,0 +1,27 @@
+func return_five() {
+  return 5;
+}
+
+func return_ten() {
+  return 10;
+}
+
+func main() {
+  print(return_five() < return_ten());
+  print(return_five() > return_ten());
+  print(return_five() <= return_five());
+  print(return_five() >= return_five());
+  print(return_five() == return_five());
+  print(return_five() != return_five());
+}
+
+/*
+*OUT*
+true
+false
+true
+true
+true
+false
+*OUT*
+*/

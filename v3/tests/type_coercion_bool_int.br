@@ -1,0 +1,10 @@
+func main() {
+  a = -5;
+  if (true == a) { print("This will print!"); }
+}
+
+/*
+*OUT*
+This will print!
+*OUT*
+*/

@@ -1,0 +1,14 @@
+func main() {
+    a = 5;
+    if (a > 3) {
+        b = 3;
+    }
+    print(a + b);
+}
+
+/*
+*OUT*
+ErrorType.NAME_ERROR
+*OUT*
+*/
+ 

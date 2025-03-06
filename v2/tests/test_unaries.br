@@ -1,0 +1,19 @@
+func main() {
+    a = true;
+    b = !true;
+    c = 1;
+    d = -c;
+    print(a);
+    print(b);
+    print(c);
+    print(d);
+}
+
+/*
+*OUT*
+true
+false
+1
+-1
+*OUT*
+*/

@@ -1,0 +1,15 @@
+func foo(ref a) {
+  a = "abc";
+}
+
+func main() {
+  b = 5;
+  foo(b);
+  print(b); /* prints abc */
+}
+
+/*
+*OUT*
+abc
+*OUT*
+*/

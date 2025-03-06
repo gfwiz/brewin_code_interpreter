@@ -1,0 +1,20 @@
+func main() {
+  print(foo(true));
+  print(foo(false));
+}
+
+func foo(x) {
+  if (x) {
+    return true;
+  }
+  else {
+    return 3;
+  }
+}
+
+/*
+*OUT*
+true
+3
+*OUT*
+*/

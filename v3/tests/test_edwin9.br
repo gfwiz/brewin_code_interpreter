@@ -1,0 +1,35 @@
+func ucla(ref fn) {
+    fn = lambda() {print("UCLA");};
+}
+
+func foo(ref fn, a) {
+    fn(a);
+}
+
+func bar(b) {
+    print(b);
+}
+
+func hmm() {
+    print("USC");
+}
+
+func main() {
+    test = 10;
+	foo(bar, test);
+    
+	some = hmm;
+	ucla(some);
+	print(some == hmm);
+	print(some == lambda() {print("UCLA");});
+    some();
+}
+
+/*
+*OUT*
+10
+false
+false
+UCLA
+*OUT*
+*/

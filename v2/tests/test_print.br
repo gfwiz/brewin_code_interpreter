@@ -1,0 +1,10 @@
+func main() {
+  print(true, " string ", 4);
+}
+
+
+/*
+*OUT*
+true string 4
+*OUT*
+*/

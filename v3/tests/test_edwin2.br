@@ -1,0 +1,32 @@
+func main() {
+    i = 0;
+
+    x = lambda(ref a, ref b) {
+        a = a + 1;
+        print(a);
+        b = b + 1;
+        print(b);
+
+        y = lambda(ref c, ref d) {
+            c = c + 1;
+            print(c);
+            d = d + 1;
+            print(d);
+        };
+
+        y(a, b);
+    };
+
+    x(i, i);
+    print(i);
+}
+
+/*
+*OUT*
+1
+2
+3
+4
+4
+*OUT*
+*/

@@ -1,0 +1,20 @@
+func foo() { 
+ print("hello");
+}
+
+func bar() {
+  return;
+}
+
+func main() {
+  val = nil;
+  if (foo() == val && bar() == nil) { print("this should print!"); }
+}
+
+/*
+*OUT*
+hello
+this should print!
+*OUT*
+*/
+

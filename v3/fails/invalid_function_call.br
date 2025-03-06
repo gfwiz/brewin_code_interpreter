@@ -1,0 +1,10 @@
+func main() {
+  x = 5; /* or x = nil; x = "abc"; x = false; etc. */
+  x(10);  /* ErrorType.TYPE_ERROR */
+}
+
+/*
+*OUT*
+ErrorType.TYPE_ERROR
+*OUT*
+*/

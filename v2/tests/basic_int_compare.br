@@ -1,0 +1,19 @@
+func main() {
+  print(5 < 10);
+  print(10 > 5);
+  print(5 <= 5);
+  print(5 >= 5);
+  print(5 == 5);
+  print(5 != 5);
+}
+
+/*
+*OUT*
+true
+true
+true
+true
+true
+false
+*OUT*
+*/

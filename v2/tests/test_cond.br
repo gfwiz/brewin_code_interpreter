@@ -1,0 +1,15 @@
+func main() {
+    a = false;
+    if (a) {
+      print("yes");
+    }
+    else {
+      print("no");
+    }
+}
+
+/*
+*OUT*
+no
+*OUT*
+*/

@@ -1,0 +1,24 @@
+/*
+
+Tests for deep copy of closed variables when
+using a lambda. More specifically, deep copying
+*other* lambdas on closure. 
+
+*/
+
+
+func main() {
+    z = 0;
+    x = lambda() { z = z + 1; print(z); };
+    y = lambda() { x(); x(); };
+    y();
+    x();
+}
+
+/*
+*OUT*
+1
+2
+1
+*OUT*
+*/

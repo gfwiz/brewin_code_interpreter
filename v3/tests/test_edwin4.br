@@ -1,0 +1,27 @@
+func foo() {
+    print("foo");
+}
+
+func bar() {
+    print("bar");
+}
+
+func main() {
+	x = lambda(ref f, ref g) {f(); g(); f = g; f(); g();};
+	x(foo, bar);
+	foo();
+	bar();
+	print(foo == bar);
+}
+
+/*
+*OUT*
+foo
+bar
+bar
+bar
+foo
+bar
+false
+*OUT*
+*/

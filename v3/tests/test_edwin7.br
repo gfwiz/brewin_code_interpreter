@@ -1,0 +1,17 @@
+func main() {
+  print(1);
+  print(true + 1);
+  print(1 == 2);
+  print(1 == true + 1);
+  print(1 == (true + 1));
+}
+
+/*
+*OUT*
+1
+2
+false
+false
+false
+*OUT*
+*/

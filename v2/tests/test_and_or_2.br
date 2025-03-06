@@ -1,0 +1,47 @@
+func main() {
+  print(("hello" == true) && (10 == 20));
+  print((10 == "10") || (5 > 3));
+  print(("world" != false) && (5 >= 5));
+  print((nil == "nil") || (10 < 5));
+  print((5 == "5") && (10 <= 5));
+  print(("true" == true) || (5 != 5));
+  print((10 == "10") && ("hello" == "world"));
+  print(("false" != false) || (10 == 10));
+  print((nil == "nil") && ("world" == "hello"));
+  print(("5" == 5) || ("world" != "world"));
+  print(("true" == true) && (10 < 5));
+  print((10 == "10") || ("hello" == "hello"));
+  print(("false" != false) && (5 >= 5));
+  print((nil == "nil") || (10 <= 5));
+  print(("5" == 5) && ("world" == "hello"));
+  print(("true" == true) || (5 != 5));
+  print((10 == "10") && ("hello" != "world"));
+  print(("false" != false) || (10 == 20));
+  print((nil == "nil") && ("world" == "world"));
+  print(("5" == 5) || ("hello" == "hello"));
+}
+
+/*
+*OUT*
+false
+true
+true
+false
+false
+false
+false
+true
+false
+false
+false
+true
+true
+false
+false
+false
+false
+true
+false
+true
+*OUT*
+*/

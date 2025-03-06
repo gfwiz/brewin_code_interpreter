@@ -1,0 +1,15 @@
+func main() {
+  print("hey" == "hey");
+  print("hey" != "hey");
+  print("heyy" == "hey");
+  print("heyy" != "hey");
+}
+
+/*
+*OUT*
+true
+false
+false
+true
+*OUT*
+*/

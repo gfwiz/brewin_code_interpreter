@@ -1,0 +1,19 @@
+func foo(ref x) {
+  return x; /* returns a deep copy of the value x that refers to */
+}
+
+func main() {
+  a = 0;
+  b = foo(a);
+  a = a + 1;
+  print(b); /* still zero since b is a copy of a's original value */
+  b = b + 1;
+  print(a); /* still 1 for the same reason */
+}
+
+/*
+*OUT*
+0
+1
+*OUT*
+*/

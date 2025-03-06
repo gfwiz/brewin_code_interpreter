@@ -1,0 +1,28 @@
+func foo() {
+  print("hello world!");
+}
+
+func copy_func(ref f) {
+  return f;
+}
+
+func main() {
+  if (foo == main) { print("wait what?"); }
+  x = foo;
+  if (x == foo) { print("yup"); }
+  y = main;
+  if (x != y) { print("that's better!"); }
+  if (x != 5) { print("that's good too"); }
+  if (x != nil) { print("it's not nil"); }
+  if (x != copy_func(x)) { print("deepcopy"); }
+}
+
+/*
+*OUT*
+yup
+that's better!
+that's good too
+it's not nil
+deepcopy
+*OUT*
+*/
